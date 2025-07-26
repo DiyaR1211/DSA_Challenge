@@ -1,39 +1,66 @@
-# DSA_Challenge_DAY1
-#DrGViswanathan  Teaches Day Challenge
-Welcome to my coding challenge repository! This repo contains my solutions for the #DrGViswanathan  Teaches day challenge, where I tackled fundamental programming problems to strengthen my problem-solving skills.
+# DSA_Challenge_DAY2
+#DrGViswanathan Teaches Day Challenge
+Welcome to my coding challenge repository! This repo contains my solutions for the #DrGViswanathan Teaches day challenge, where I tackled fundamental programming problems to strengthen my problem-solving skills.
 🎯 Challenge Overview
-This challenge focuses on implementing clean, efficient solutions to classic coding problems. Each solution demonstrates different algorithmic approaches and data structure usage.
+This challenge focuses on implementing clean, efficient solutions to classic coding problems. Each solution demonstrates different algorithmic approaches and data structure usage covering arrays, strings, linked lists, and binary trees.
 📝 Problems Solved
-1. Two Sum (LeetCode #1)
+1. FizzBuzz (LeetCode #412)
 Difficulty: Easy
-Topic: Array, Hash Table
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+Topic: Array, String, Math
+Given an integer n, return a string array where for each integer i in the range [1, n]:
 
-Solution Approach: Use hash map to store number-to-index mapping
-Two-pass algorithm: first pass stores all numbers, second pass finds complement
-Handle duplicate indices with careful checking
+"FizzBuzz" if i is divisible by both 3 and 5
+"Fizz" if i is divisible by 3
+"Buzz" if i is divisible by 5
+str(i) otherwise
+
+Solution Approach: Iterate through numbers 1 to n
+Use modulo operator to check divisibility
+Handle conditions in order of precedence (FizzBuzz first)
 
 
-Key Concepts:
+Key Concepts: Modulo arithmetic for divisibility checks
+Conditional logic with proper precedence
+Time complexity: O(n), Space complexity: O(n)
 
-Hash table for O(1) lookup
-Time complexity: O(n)
-Space complexity: O(n)
+2. Group Anagrams (LeetCode #49)
+Difficulty: Medium
+Topic: Array, Hash Table, String, Sorting
+Given an array of strings strs, group the anagrams together.
+Solution Approach:Use character frequency counting as key
+Create array of size 26 for each string to count letters
+Convert frequency array to tuple for hashing
+Group strings with same frequency pattern
 
-2. Find Numbers with Even Number of Digits (LeetCode #1295)
+
+Key Concepts:Character frequency analysis
+Hash table with custom keys
+Time complexity: O(n * m), Space complexity: O(n * m)
+
+3. Remove Linked List Elements (LeetCode #203)
 Difficulty: Easy
-Topic: Array
-Given an array nums of integers, return how many of them contain an even number of digits.
+Topic: Linked List, Recursion
+Given the head of a linked list and an integer val, remove all nodes with val.
+Solution Approach:Handle removal of head nodes first
+Traverse list and skip nodes with target value
+Update pointers to maintain list integrity
 
-Solution Approach:Convert each number to string to easily count digits
-Use modulo operator to check if digit count is even
-Simple counter to track numbers with even digits
+
+Key Concepts:Linked list traversal and manipulation
+Pointer management
+Time complexity: O(n), Space complexity: O(1)
+
+4. Same Tree (LeetCode #100)
+Difficulty: Easy
+Topic: Binary Tree, Depth-First Search, Recursion
+Given the roots of two binary trees p and q, check if they are the same.
+Solution Approach:Recursive comparison of tree nodes
+Base cases: both null (true), one null (false)
+Compare values and recursively check subtrees
 
 
-Key Concepts:
-
-String conversion for digit counting
-Modulo operation for even/odd checking
-Time complexity: O(n * m) where m is average digits per number
+Key Concepts:Binary tree traversal
+Recursive problem solving
+Time complexity: O(min(m,n)), Space complexity: O(min(m,n))
 
 🚀 Getting Started
